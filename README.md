@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/livinglifemeaning/BootcampTestimonialsSlider
+- Live Site URL: https://livinglifemeaning.github.io/BootcampTestimonialsSlider/
 
 
 ### Built with
@@ -21,12 +21,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
 
 ### Notes
 Estimated Time: 2hrs | Actual Time: 2hrs20m 
