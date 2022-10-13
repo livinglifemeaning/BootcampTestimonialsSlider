@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+:root {
+  --c-blue: hsl(240, 38%, 20%);
+  --c-gray: hsl(240, 18%, 77%);
+  --f-primary: "Inter", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body, p {
+  margin: 0;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: var(--f-primary);
+  background-color: hsl(240, 18%, 99%);
+    min-height: 100vh; 
+}
+
+main{
+    padding: 2rem 2rem; 
+    min-height: 100vh; 
+}
+
+.hidden {
+  display: none; 
+}
+
+
+.imageBox {
+  position: relative;
+  margin-bottom: 7rem;  
+}
+
+/* Image Carousel */
+
+.carouselBox{
+    position: absolute;  
+    top: 40px; 
+    left: 50%; 
+    translate: -50%; 
+}
+.carousel{
+    width: 18rem; 
+    height: 18rem; 
+    position: relative; 
+}
+
+.carousel > ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none;
+}
+
+
+.personImg{
+    position: absolute; 
+    inset: 0;
+    opacity: 0; 
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(37, 20, 107, 0.3);
+    transition: 300ms opacity ease-in-out; 
+    transition-delay: 200ms; 
+}
+.personImg[data-active]{
+    opacity: 1; 
+    z-index: 10; 
+    transition-delay: 0ms;
+}
+
+.personImg > img{
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+}
+
+/* End of Image Carousel */
+
+.slider{
+    position: absolute; 
+    z-index: 100; 
+    bottom: -5px; 
+    left: 50%; 
+    translate: -50%; 
+    background-color: #fff; 
+    width: 5.5rem; 
+    padding: .7rem .9rem; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(37, 20, 107, 0.1);
+}
+
+.arrow{
+   cursor: pointer; 
+}
+
+.arrow:hover{
+    scale: 1.2; 
+}
+
+.testimonialBox{
+    position: relative; 
+    text-align: center;  
+
+}
+
+.quotes{
+    position: absolute; 
+    top: -25px; 
+    left: 50%; 
+    translate: -50%; 
+    width: 60px;  
+}
+
+.testimonial{
+    font-size: 18px; 
+    font-weight: 300; 
+    line-height: 1.5em; 
+    color: var(--c-blue); 
+    margin-bottom: 1rem; 
+}
+
+.name{
+    color: var(--c-blue); 
+    font-weight: 700; 
+}
+
+.position{
+    font-size: 16px; 
+    font-weight: 500; 
+    color: var(--c-gray);
+}
+
+.bodyBg{
+    position: absolute; 
+    left: 0; 
+    bottom: -10%; 
+    z-index: -1; 
+}
+
+@media (min-width: 750px) {
+    html{
+        overflow: hidden;
+    }
+    main{
+        display: flex; 
+        flex-direction: row-reverse; 
+        justify-content: center; 
+        align-items: center;
+        
+    }
+
+    .testimonialBox{
+        text-align: left;  
+        max-width: 40rem; 
+        translate: 10rem; 
+        position: relative;  
+        z-index: 5; 
+        
+    }
+
+    .name, .position{
+        display: inline;
+    }
+
+    .position{
+        margin-left: 1rem;  
+    }
+    .hidden{
+        display: none; 
+    }
+   
+    .testimonial{
+        font-size: 32px; 
+    }
+    .slider{
+       left: 100px; 
+    }
+    .imageBox{
+        margin: 0; 
+    }
+
+    .carousel{
+        width: 30rem; 
+        height: 30rem; 
+    }
+
+    .carouselBox{
+        top: 80px; 
+    }
+
+    .quotes{
+        translate: 0; 
+        top: -30px;  
+        left: 50px; 
+        width: 90px;  
+    }
+}

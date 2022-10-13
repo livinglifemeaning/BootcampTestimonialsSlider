@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="imageBox">
+        <img src="./images/pattern-bg.svg" alt="" class="imageBg" />
+        <div class="carouselBox" data-carousel>
+          <div class="carousel">
+            <div class="slider">
+              <img
+                src="./images/icon-prev.svg"
+                class="arrow"
+                alt="Arrow to change displayed content"
+                data-carousel-button="prev"
+              />
+              <img
+                src="./images/icon-next.svg"
+                class="arrow"
+                alt="Arrow to change displayed content"
+                data-carousel-button="next"
+              />
+            </div>
+            <ul data-slides>
+              <li class="personImg" data-active>
+                <img src="./images/image-tanya.jpg" alt="Tanya" />
+              </li>
+              <li class="personImg">
+                <img src="./images/image-john.jpg" alt="John" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="testimonialBox">
+        <img src="./images/pattern-quotes.svg" alt="" class="quotes" />
+        <p class="testimonial">
+          “ I’ve been interested in coding for a while but never taken the jump,
+          until now. I couldn’t recommend this course enough. I’m now in the job
+          of my dreams and so excited about the future. ”
+        </p>
+        <p class="testimonial hidden">
+          “ If you want to lay the best foundation possible I’d recommend taking
+          this course. The depth the instructors go into is incredible. I now
+          feel so confident about starting up as a professional developer. ”
+        </p>
+        <p class="name">Tanya Sinclair</p>
+        <p class="name hidden">John Tarkpor</p>
+        <p class="position">UX Engineer</p>
+        <p class="position hidden">Junior Front-end Developer</p>
+      </div>
+      <img src="./images/pattern-curve.svg" alt="" class="bodyBg" />
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
